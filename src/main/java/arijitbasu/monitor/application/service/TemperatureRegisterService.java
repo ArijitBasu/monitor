@@ -35,31 +35,4 @@ public class TemperatureRegisterService {
         return Response.status(Response.Status.OK).build();
     }
 
-
-    @Path("/min")
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getMinimumTemperature(@Context ContainerRequestContext requestContext, @QueryParam("startTs") long minTs, @QueryParam("endTs") long maxTs) {
-        Double temperature = monitorBo.getMinimumTemperature(minTs, maxTs);
-        return Response.status(Response.Status.OK).entity(new Temperature(temperature, TemperatureUnit.K)).build();
-    }
-
-
-
-    @Path("/max")
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getMaximumTemperature(@Context ContainerRequestContext requestContext, @QueryParam("startTs") long minTs, @QueryParam("endTs") long maxTs) {
-        Double temperature = monitorBo.getMaximumTemperature(minTs, maxTs);
-        return Response.status(Response.Status.OK).entity(new Temperature(temperature, TemperatureUnit.K)).build();
-    }
-
-
-    @Path("/avg")
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getAverageTemperature(@Context ContainerRequestContext requestContext, @QueryParam("startTs") long minTs, @QueryParam("endTs") long maxTs) {
-        Double temperature = monitorBo.getAverageTemperature(minTs, maxTs);
-        return Response.status(Response.Status.OK).entity(new Temperature(temperature, TemperatureUnit.K)).build();
-    }
 }
