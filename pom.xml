@@ -176,7 +176,7 @@
         <spring25-release-version>4.3.6.RELEASE</spring25-release-version>
         <hibernate.version>5.0.2.Final</hibernate.version>
         <mysql-connector.version>5.1.6</mysql-connector.version>
-        <c3po.version>0.9.5.1</c3po.version>
+        <c3po.version>0.9.5.4</c3po.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <env>staging</env>
