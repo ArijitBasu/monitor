@@ -10,7 +10,7 @@ It serves the following functions:
 
 `curl -X GET 'http://localhost:7000/v1/<agg>?startTs=0&endTs=15763583600' `
 
-The service is backed by MySQL which is in no ways the right database for the job. We need to replace the database by a time series database like influxDB or use a new SQL.
+The service is backed by MySQL which is in no ways the right database for the job. We need to replace the database by a time series database like influxDB or use a noSQL.
 Also, we are being flexible here by computing the min, max and avg on the runtime which is not sustainable when dealing with large amounts of data which is the case with monitoring systems.
 
 We should be creating pre aggregates and should be serving the data from the same.
