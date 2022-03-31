@@ -173,7 +173,7 @@
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring25-release-version>4.3.6.RELEASE</spring25-release-version>
+        <spring25-release-version>5.3.18</spring25-release-version>
         <hibernate.version>5.0.2.Final</hibernate.version>
         <mysql-connector.version>5.1.6</mysql-connector.version>
         <c3po.version>0.9.5.1</c3po.version>
